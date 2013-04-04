@@ -17,6 +17,8 @@ RSpec.configure do |config|
 
   SimpleCov.start do
     add_filter "/spec/"
+    # add_filter "/controllers/charges_controller" #not testing stripe
+    # add_filter "/controllers/users_controller"  #users are a cancan protected route
   end
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

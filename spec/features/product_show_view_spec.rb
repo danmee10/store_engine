@@ -12,7 +12,7 @@ describe 'product show page' do
 
     expect(page).to have_content @product.title
     expect(page).to have_content @product.description
-    expect(page).to have_content @product.price
+    expect(page).to have_content (@product.price / 100).round(2)
   end
 
   it "allows me to add a product to my cart" do
@@ -21,7 +21,7 @@ describe 'product show page' do
     click_on "Add to cart"
 
     expect(page).to have_content @product.title
-    expect(page).to have_content @product.price
+    expect(page).to have_content (@product.price / 100).round(2)
     expect(page).to have_content "Quantity:1"
 
   end

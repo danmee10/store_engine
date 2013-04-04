@@ -14,7 +14,7 @@ describe 'login page' do
       User.create(username: "josh", email: "josh@gmail.com", password: "testtesttest", first_name: "testuser", last_name: "testuser")
 
       visit login_path
-      fill_in "Username", with: "josh"
+      fill_in "login_id", with: "josh"
       fill_in "Password", with: "testtesttest"
       click_button "Login"
       sleep 5

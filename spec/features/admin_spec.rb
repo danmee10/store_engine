@@ -21,7 +21,7 @@ describe "admin dashboard" do
       within 'h1' do
         page.should have_content 'Administration'
       end
-      page.should have_content 'Manage Users'
+      page.should have_content 'Manage Products'
       page.should have_content 'New Products'
     end
   end

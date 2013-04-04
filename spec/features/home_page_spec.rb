@@ -9,7 +9,7 @@ describe 'home page' do
 
   it "displays the products index view" do
     visit '/'
-    expect(page).to have_content 'Team Solo Store'
+    expect(page).to have_content 'Team Solo Tech'
   end
 
   it "should display button to product detail" do
